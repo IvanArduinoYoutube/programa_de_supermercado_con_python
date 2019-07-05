@@ -1,0 +1,19 @@
+naranja,manzana,limon,ciruela = 0.3,0.2,0.2,0.3
+print('Estos son los precios de las frutas:')
+print('naranja',naranja,'€','manzana',manzana,'€','limon',limon,'€','ciruela',ciruela,'€')
+a = float(input('Introduce la cantidad deseada de naranjas:'))
+b = float(input('Introduce la cantidad deseada de manzanas:'))
+c = float(input('Introduce la cantidad deseada de limones:'))
+d = float(input('Introduce la cantidad deseada de ciruelas:'))
+suma = float( a*naranja + b*manzana + c*limon + d*ciruela)
+print('El precio final es: %i'% suma)
+print('Cada fruta ha costado:')
+print('Naranjas',a*naranja,'€')
+print('Manzanas',b*manzana,'€')
+print('Limones',c*limon,'€')
+print('Ciruelas',d*ciruela,'€')
+igic = 6.5*suma/100
+precio_igic = print('El precio final sumando el IGIC ha sido de:',igic+suma,'€ .')
+descuento = 25*(igic+suma)/100
+print('Su precio si tiene tarjeta Hacendado es de:', igic+suma-descuento, '€ .')
+print('Gracias por comprar en este supermercado')
